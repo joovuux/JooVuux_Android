@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/linearLayout"
+        android:paddingBottom="2dp">
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="mode 1"
+            android:id="@+id/btnMode1"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="Mode 1"
+            android:textOn="Mode 1"
+            android:textColor="@drawable/toggle_selector_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" mode 2"
+            android:id="@+id/btnMode2"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="Mode 2"
+            android:textOn="Mode 2"
+            android:enabled="true"
+            android:textColor="@drawable/toggle_selector_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PHOTO MODE"
+            android:id="@+id/btnPhotoMode"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="PHOTO MODE"
+            android:textOn="PHOTO MODE"
+            android:enabled="false"
+
+            android:textColor="@drawable/toggle_selector_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainFrame"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

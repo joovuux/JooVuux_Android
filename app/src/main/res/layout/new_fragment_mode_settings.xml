@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainScroll"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/resetAllSettings"
+                    android:background="#f8f8f8"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Reset All Settings"
+                        android:id="@+id/btnResetAllSettings"
+                        android:background="@drawable/selector_design_settings_btn"
+                        android:textColor="#FFF"
+                        android:focusable="false"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/VideoResolutions"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Video Resolution"
+                        android:id="@+id/textView4"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerVideoResolutions"
+                        android:textAlignment="textEnd"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="2560*1080 30P 21:9"
+                        android:id="@+id/tvVideoResolutions"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical|right" />
+
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:id="@+id/lvVideoResolutions"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/Audio"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Audio"
+                        android:id="@+id/textView"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/toggleAudio"
+
+                        android:checked="true"
+                        android:background="@drawable/selector_toggle_design"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#fff" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/VideoTimeStamp"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Video Time Stamp"
+                        android:id="@+id/textView7"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/toggleVideoTimeStamp"
+                        android:checked="true"
+                        android:background="@drawable/selector_toggle_design"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#fff" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/AutoRotate"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Image Rotation"
+                        android:id="@+id/textView125"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerAutoRotate"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/textView125"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="option"
+                        android:id="@+id/tvAutoRotate"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical|right" />
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:id="@+id/lvAutoRotate"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/Rotate180Degrees"
+                    android:background="#f8f8f8"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="180 Degree Rotation"
+                        android:id="@+id/textView18"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/toggleRotate180Degrees"
+                        android:checked="false"
+                        android:background="@drawable/selector_toggle_design"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/LoopRecording"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Loop Recording"
+                        android:id="@+id/textView19"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/toggleLoopRecording"
+                        android:checked="true"
+                        android:background="@drawable/selector_toggle_design"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/VideoClipLenght"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Video Clip Length"
+                        android:id="@+id/textView21"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerVideoClipLenght"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/textView21"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="option"
+                        android:id="@+id/tvVideoClipLenght"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical|right" />
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:id="@+id/lvVideoClipLenght"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/VideoBitRates"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Video Bit Rates"
+                        android:id="@+id/textView20"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerVideoBitRates"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/textView20"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="S.Fine"
+                        android:id="@+id/tvVideoBitRates"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical|right" />
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:id="@+id/lvVideoBitRates"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/WDR"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="WDR"
+                        android:id="@+id/textView65"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/toggleWDR"
+                        android:checked="true"
+                        android:background="@drawable/selector_toggle_design"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:id="@+id/lvWDR"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/FieldOfView"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Field of View"
+                        android:id="@+id/textView24"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerFieldOfView"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/textView24"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="option"
+                        android:id="@+id/tvFieldOfView"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical|right"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="155"
+                        android:id="@+id/tvFieldOfViewOff"
+                        android:textColor="#85555555"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical|right" />
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:id="@+id/lvFieldOfView"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/TimeLapseVideo"
+                    android:background="#f8f8f8"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Time Lapse Video"
+                        android:id="@+id/textView25"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerTimeLapseVideo"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/textView25"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="option"
+                        android:id="@+id/tvTimeLapseVideo"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical|right" />
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:id="@+id/lvTimeLapseVideo"
+                    android:visibility="gone" />
+
+                <!--<RelativeLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:id="@+id/TimedMode"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="#16FFFFFF"-->
+                <!--android:visibility="visible" >-->
+
+                <!--<TextView-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text="Timed Mode"-->
+                <!--android:id="@+id/textView26"-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<ToggleButton-->
+                <!--style="?android:attr/borderlessButtonStyle"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:id="@+id/toggleTimeMode"-->
+                <!--android:background="@drawable/toggle_selector"-->
+                <!--android:textOff=""-->
+                <!--android:textOn=""-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_margin="5dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:id="@+id/FromTime"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="#16FFFFFF"-->
+                <!--android:visibility="visible" >-->
+
+                <!--<TextView-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text="From Time"-->
+                <!--android:id="@+id/textView27"-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text="00:00"-->
+                <!--android:id="@+id/tvFromTime"-->
+                <!--android:layout_alignTop="@+id/textView27"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:textColor="#fff" />-->
+
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:id="@+id/ToTime"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="#16FFFFFF"-->
+                <!--android:visibility="visible" >-->
+
+                <!--<TextView-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text="To Time"-->
+                <!--android:id="@+id/textView51"-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text="00:00"-->
+                <!--android:id="@+id/tvToTime"-->
+                <!--android:layout_alignTop="@+id/textView51"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:textColor="#fff" />-->
+
+                <!--</RelativeLayout>-->
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/DisplaySpeed"
+                    android:background="#f8f8f8"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Display Speed"
+                        android:id="@+id/textView29"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/toggleDisplaySpeed"
+                        android:checked="true"
+                        android:background="@drawable/selector_toggle_design"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <!--<RelativeLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:id="@+id/ArtificialLightFrequency"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="#16FFFFFF"-->
+                <!--android:visibility="visible" >-->
+
+                <!--<TextView-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text="Artificial Light Frequency"-->
+                <!--android:id="@+id/textView32"-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<Spinner-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/spinnerArtificialLightFrequency"-->
+
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_toRightOf="@+id/textView32"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true" />-->
+                <!--</RelativeLayout>-->
+
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/LDWS"
+                    android:background="#f8f8f8"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="LDWS"
+                        android:id="@+id/textView15"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/toggleLDWS"
+                        android:checked="false"
+                        android:background="@drawable/selector_toggle_design"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/FDWS"
+                    android:background="#f8f8f8"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="FDWS"
+                        android:id="@+id/textView17"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/toggleFDWS"
+                        android:checked="false"
+                        android:background="@drawable/selector_toggle_design"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

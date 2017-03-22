@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/libs/universal-image-loader-1.9.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.4_5cfc5b355caa089a55c04ca28bfb198ba94a5bb9.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.0.0_efbb1635ec0e9230b883b1f14affa30a3b0c3ec5.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4e54b15078c6b8d7a3015f8fbd63e2e1e9b7057f">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/instant-run_d84a348f925309c89b2a20c2781f1dd837b00636.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.davemorrissey.labs/subsampling-scale-image-view/3.4.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="36cea48a105ddeef047b645ab0f86f72993e8676">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.davemorrissey.labs-subsampling-scale-image-view-3.4.1_a1d540a8ae989d812fc0f0f0b5e9c202052bf379.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-8.4.0_882376a0019ad4ae7742649cef7d9466435f1c7e.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.4/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f7dc6b43d7c7f3d94e98531aef88269f9ed2a37b">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/io.fabric.sdk.android-fabric-1.3.4_9b809098efa1fdc751cc9051518997f831e19029.jar" />
+    </item>
+    <item
+        jar="/Users/henry/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/library-1.0.19_bf4b2bc18ebe962cfbd0407e0b2aefc67ec8e6a5.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_eada072c15d886698973ee11d683ab4ce93dbbd7.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_ad7b74c5776a99d2a568d6a3c03d94baae325a37.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-8.4.0_97eae6f168cae28d69792e972517e3045b03c3e4.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="73e3dcd1c6363340af17e78967e6ed27d585d52d">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.twitter.sdk.android-tweet-ui-1.3.0_de3d0405bbfdf54f60bb97b100ad0769b39892b1.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_dd4a939ae3c1dc6044fafcf5091aea29fe3826c7.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.6.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="85dbcb10f2e04aa08bcd7b4405e4a7fec615760d">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.digits.sdk.android-digits-1.6.0_0870de89bd66b3a776e650889797ea96f4606ee8.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_d83351ff67b36d22684d4d6b8f7fa1fd58086862.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a9f5c30c22dc9a623078f85000c787cd191aa35f">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.twitter.sdk.android-twitter-core-1.4.0_2f23b499c54397c75c96c3a55a3829574c187b6e.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.jaredrummler/android-device-names/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="af35b59965d007a488312906947061c22b4f429a">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.jaredrummler-android-device-names-1.0.1_c52a1501df166eaca66b6d93b7998a5c67763be2.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-measurement-8.4.0_82806de6b6fe98bc5c63d3342229fa73bbef117d.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/de.mrmaffen/vlc-android-sdk/3.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="43abcb2ec5686c280782c946ea468f9ac7ea15c0">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/de.mrmaffen-vlc-android-sdk-3.0.0_d6cb2406c5f95e8d81fcbd03fb9ba69926b3d7e5.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter/1.6.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2bd26de12f5ea29d4cabc6e84045de04cb615680">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.twitter.sdk.android-twitter-1.6.0_39441e0e77ccc9fda5ec1004d188e27cb613dce4.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.orhanobut/dialogplus/1.6/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="772647233d87bcae1346b7cbec8b70fbf904dfaf">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.orhanobut-dialogplus-1.6_c78d507fab1244ee40baccda0293e8d2a0b07b89.jar" />
+    </item>
+    <item
+        jar="/Users/henry/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.6.1/efb0a36546aa8857ab8df358b106c1817e03cbee/retrofit-1.6.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="efb0a36546aa8857ab8df358b106c1817e03cbee">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/retrofit-1.6.1_fcd065aeb0f0e2a7bc025000486d1704b6002b74.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.4.0_e4fca036e233e2f0b56a545b6970fdc74cd75e62.jar" />
+    </item>
+    <item
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/gson-2.2.4_d0ce76b63ce905fbab3c5d385c8e1b8692010f19.jar" />
+    </item>
+    <item
+        jar="/Volumes/Tools/DevelopmentTools/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_d426dd5b09e05d7a8cc75b62de3505054bd53741.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_18fd7adbe4631958c67f63c7a255fb40a82721b2.jar" />
+    </item>
+    <item
+        jar="/Users/henry/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4_b54d0b7a41745b745d69a1b96ca1d3f0c384918a.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ae870830551be51de7146db4af1c54e56efec313">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_7b195dba5aa8a6c1ca91863da58f3c49a8ea4702.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_7e47bc3b579909d315232253e9fef6871b1ac157.jar" />
+    </item>
+    <item
+        jar="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/0.8.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="157015930713d0411b69a76606f306c9a2c11af3">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/com.twitter.sdk.android-tweet-composer-0.8.0_b6b2e7286feb4deee06f85be5a719ad932768ceb.jar" />
+    </item>
+    <item
+        jar="/Users/henry/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Volumes/MyDATA/MyWork/CurrentTask/JooVuux/JooVuux_Git/JooVuux_Android/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_7d5c7116e5ae5e3f0359aa2c6cc62f3d740bc0df.jar" />
+    </item>
+
+</items>

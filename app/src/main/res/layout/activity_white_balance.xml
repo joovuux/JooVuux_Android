@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relativeLayout2"
+            android:layout_margin="5dp"
+            android:background="#16FFFFFF"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="White Balance"
+                android:id="@+id/textView52"
+                android:textSize="17dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#ff434343"
+                android:layout_marginLeft="5dp" />
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinWhiteBalance"
+                android:textAlignment="textEnd"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView52"
+                android:layout_toRightOf="@+id/textView52"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:baselineAligned="false"
+                android:id="@+id/linearLayout2"
+                android:visibility="visible"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Sharpness"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Sharpness"
+                        android:id="@+id/textView33"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <android.widget.VerticalSeekBar
+                            android:id="@+id/seekSharpness"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:max="2"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="STANDARD"
+                            android:id="@+id/tvSharpness2"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/seekSharpness"
+                            android:layout_toEndOf="@+id/seekSharpness"
+                            android:layout_marginTop="10dp"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="SOFT"
+                            android:id="@+id/tvSharpness0"
+                            android:layout_alignBottom="@+id/seekSharpness"
+                            android:layout_toRightOf="@+id/seekSharpness"
+                            android:layout_toEndOf="@+id/seekSharpness"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="HARD"
+                            android:id="@+id/tvSharpness1"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/seekSharpness"
+                            android:layout_toEndOf="@+id/seekSharpness"
+                            android:textStyle="bold"
+                            android:textSize="13dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editSharpness"
+                            android:hint="0"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-128 ... 128"
+                            android:id="@+id/textView34"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#999999" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Exposure"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Exposure"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <android.widget.VerticalSeekBar
+                            android:id="@+id/seekExposure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:max="12"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="- Normal"
+                            android:id="@+id/tvExposure1"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="- Dark"
+                            android:id="@+id/tvExposure2"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignLeft="@+id/tvExposure1"
+                            android:layout_alignStart="@+id/tvExposure1"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="45dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/seekExposure"
+                            android:layout_toEndOf="@+id/seekExposure">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="-2.0"
+                                android:id="@+id/tvEx12"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="-1.7"
+                                android:id="@+id/tvEx11"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="-1.3"
+                                android:id="@+id/tvEx10"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="-1.0"
+                                android:id="@+id/tvEx9"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="-0.7"
+                                android:id="@+id/tvEx8"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="-0.3"
+                                android:id="@+id/tvEx7"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="0.0"
+                                android:id="@+id/tvEx6"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="+0.3"
+                                android:id="@+id/tvEx5"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="+0.7"
+                                android:id="@+id/tvEx4"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="+1.0"
+                                android:id="@+id/tvEx3"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="+1.3"
+                                android:id="@+id/tvEx2"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="+1.7"
+                                android:id="@+id/tvEx1"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="+2.0"
+                                android:id="@+id/tvEx0"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editExposure"
+                            android:hint="0"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-128 ... 128"
+                            android:id="@+id/textView35"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#999999"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Contrast"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Contrast"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <android.widget.VerticalSeekBar
+                            android:id="@+id/seekContrast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:max="2"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="STANDARD"
+                            android:id="@+id/tvContrast2"
+                            android:visibility="visible"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/seekContrast"
+                            android:layout_toEndOf="@+id/seekContrast"
+                            android:layout_marginTop="10dp"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="HARD"
+                            android:id="@+id/tvContrast1"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/seekContrast"
+                            android:layout_toEndOf="@+id/seekContrast"
+                            android:visibility="visible"
+                            android:textStyle="bold"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="SOFT"
+                            android:id="@+id/tvContrast0"
+                            android:visibility="visible"
+                            android:layout_alignBottom="@+id/seekContrast"
+                            android:layout_toRightOf="@+id/seekContrast"
+                            android:layout_toEndOf="@+id/seekContrast"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="13dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editContrast"
+                            android:hint="0"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-128 ... 128"
+                            android:id="@+id/textView36"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#999999"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Sufiration"
+                    android:layout_margin="5dp"
+                    android:visibility="visible"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Saturation"
+                        android:textSize="18dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <android.widget.VerticalSeekBar
+                            android:id="@+id/seekSufiration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:max="256"
+                            android:progress="128"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="- Nomral"
+
+                            android:visibility="visible"
+                            android:id="@+id/tvSufiration1"
+                            android:layout_centerVertical="true"
+                            android:layout_alignLeft="@+id/tvSufiration2"
+                            android:layout_alignStart="@+id/tvSufiration2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="- Height"
+
+                            android:visibility="visible"
+                            android:id="@+id/tvSufiration2"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@+id/tvSufiration0"
+                            android:layout_alignEnd="@+id/tvSufiration0"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="- Low"
+
+                            android:visibility="visible"
+                            android:layout_alignBottom="@+id/seekSufiration"
+                            android:layout_toRightOf="@+id/seekSufiration"
+                            android:layout_toEndOf="@+id/seekSufiration"
+                            android:id="@+id/tvSufiration0"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editSufiration"
+                            android:hint="0"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-128 ... 128"
+                            android:id="@+id/textView37"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#999999" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout3"
+                        android:layout_above="@+id/textView43"
+                        android:layout_alignParentTop="true">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ColorOptions"
+                            android:visibility="visible"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Color Options"
+                                android:textIsSelectable="true"
+                                android:textSize="17dp" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <android.widget.VerticalSeekBar
+                                    android:id="@+id/seekColorOptions"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:max="7"
+                                    android:progress="3"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="37dp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toRightOf="@+id/seekColorOptions"
+                                    android:layout_toEndOf="@+id/seekColorOptions"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="9dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Mono"
+                                        android:id="@+id/tvColorOptions7"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Sepia"
+                                        android:id="@+id/tvColorOptions6"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Cooler"
+                                        android:id="@+id/tvColorOptions5"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Cool"
+                                        android:id="@+id/tvColorOptions4"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Normal"
+                                        android:id="@+id/tvColorOptions3"
+                                        android:layout_weight="1"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Warm"
+                                        android:id="@+id/tvColorOptions2"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Warmer"
+                                        android:id="@+id/tvColorOptions1"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Vivid"
+                                        android:id="@+id/tvColorOptions0"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/WhiteBalance"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="White Balance"
+                                android:textIsSelectable="true"
+                                android:textSize="17dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.widget.VerticalSeekBar
+                                    android:id="@+id/seekWhiteBalance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:max="7"
+                                    android:progress="7"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toRightOf="@+id/seekWhiteBalance"
+                                    android:layout_toEndOf="@+id/seekWhiteBalance"
+                                    android:layout_marginTop="9dp"
+                                    android:layout_marginBottom="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Auto"
+                                        android:id="@+id/tvWhiteBalance7"
+                                        android:layout_weight="1"
+                                        android:textStyle="bold"
+                                        android:gravity="center_vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Sunny"
+                                        android:id="@+id/tvWhiteBalance6"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Cloudy"
+                                        android:id="@+id/tvWhiteBalance5"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Tungstem"
+                                        android:id="@+id/tvWhiteBalance4"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Fluorescent"
+                                        android:id="@+id/tvWhiteBalance3"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Custom 1"
+                                        android:id="@+id/tvWhiteBalance2"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Custom 2"
+                                        android:id="@+id/tvWhiteBalance1"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:text="- Custom 3"
+                                        android:id="@+id/tvWhiteBalance0"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/linearLayout7">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Red"
+                            android:id="@+id/textView38" />
+
+                        <EditText
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Green"
+                            android:id="@+id/textView39" />
+
+                        <EditText
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editText2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blue"
+                            android:id="@+id/textView41" />
+
+                        <EditText
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editText3" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="RGB"
+                        android:id="@+id/textView43"
+                        android:layout_above="@+id/linearLayout7"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView" >
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

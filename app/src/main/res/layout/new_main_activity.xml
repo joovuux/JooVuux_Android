@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:id="@+id/linearLaoutMain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_design_btn"
+        android:layout_weight="280"
+        android:id="@+id/frameLogo">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/new_logo"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/textView57"
+        android:background="#e2e2e2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="360"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:id="@+id/frameMainSettings"
+            android:background="@drawable/selector_design_btn">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_main_settings_btn"
+                android:scaleType="fitXY"
+                android:duplicateParentState="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Main Settings"
+                android:id="@+id/textView11"
+                android:textSize="19dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView12"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView60"
+            android:background="#e2e2e2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:id="@+id/frameModeSettings"
+            android:background="@drawable/selector_design_btn">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton6"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_mode_settings_btn"
+                android:scaleType="fitXY"
+                android:duplicateParentState="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mode Settings"
+                android:id="@+id/textView12"
+                android:textSize="19dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/textView58"
+        android:background="#e2e2e2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="360"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:id="@+id/btnGallery"
+            android:background="@drawable/selector_design_btn">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="55dp"
+                android:id="@+id/imageButton4"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_gallery_btn"
+                android:scaleType="fitXY"
+                android:duplicateParentState="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:id="@+id/textView13"
+                android:textSize="19dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView61"
+            android:background="#e2e2e2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:id="@+id/frameStreamingBtn"
+            android:background="@drawable/selector_design_btn">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageButton5"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_streaming_btn"
+                android:scaleType="fitXY"
+                android:duplicateParentState="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Live Stream"
+                android:id="@+id/textView14"
+                android:textSize="19dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/textView59"
+        android:background="#e2e2e2"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="240"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_design_btn"
+            android:id="@+id/btnMakePhoto">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageButton3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_photo_btn"
+                android:scaleType="fitXY"
+                android:duplicateParentState="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView62"
+            android:background="#e2e2e2" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_design_btn"
+            android:id="@+id/frameStartRec">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageButton7"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_video_btn"
+                android:scaleType="fitXY"
+                android:duplicateParentState="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView63"
+            android:background="#e2e2e2" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/frameConnectToCamera"
+            android:background="@drawable/selector_design_btn">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageButton8"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_connection_btn"
+                android:scaleType="fitXY"
+                android:duplicateParentState="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

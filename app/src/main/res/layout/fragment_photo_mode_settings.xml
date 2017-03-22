@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Main Settings Screen"
+            android:id="@+id/tvTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainScroll"
+            android:layout_below="@+id/tvTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/DateTimestamp"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Date Timestamp"
+                        android:id="@+id/textView"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/toggleDateTimestamp"
+
+                        android:checked="false"
+                        android:background="@drawable/toggle_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/PhotoResolution"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Photo Resolution "
+                        android:id="@+id/textView4"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerPhotoResolution"
+                        android:textAlignment="textEnd"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/RotatePhotos180Degrees"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Rotate Photos 180 degrees"
+                        android:id="@+id/textView45"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/toggleRotatePhotos180Degrees"
+                        android:checked="false"
+                        android:background="@drawable/toggle_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/TimeLapsePhoto"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Time-Lapse Photo"
+                        android:id="@+id/textView46"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/toggleTimeLapsePhoto"
+                        android:checked="false"
+                        android:background="@drawable/toggle_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/TimeLapseVideo"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Time-Lapse Video"
+                        android:id="@+id/textView47"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/toggleTimeLapseVideo"
+                        android:checked="false"
+                        android:background="@drawable/toggle_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/relativeLayout3"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Burst Photo Mode (pictures per second)"
+                        android:id="@+id/textView31"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerBurstPhotoMode"
+                        android:layout_alignBottom="@+id/textView31"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/textView31"
+                        android:layout_toRightOf="@+id/textView31"
+                        android:layout_toEndOf="@+id/textView31" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

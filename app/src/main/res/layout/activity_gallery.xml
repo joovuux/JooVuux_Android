@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/linearLayout4"
+        android:layout_margin="5dp"
+        android:visibility="visible">
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="VIDEOS"
+            android:id="@+id/toggleVideoFlter"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="VIDEOS"
+            android:textOn="VIDEOS"
+            android:textColor="#fff" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PICTURES"
+            android:id="@+id/togglePhotoFilter"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="PICTURES"
+            android:textOn="PICTURES"
+            android:textColor="#fff" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ALL"
+            android:id="@+id/toggleAllFilter"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="ALL"
+            android:textOn="ALL"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gvGallery"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:fastScrollAlwaysVisible="false"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_above="@+id/linearLayout5"
+        android:nestedScrollingEnabled="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/linearLayout5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="BY DATE"
+            android:id="@+id/toggleSortByDate"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="BY DATE"
+            android:textOn="BY DATE"
+            android:textColor="#fff" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="BY SIZE"
+            android:id="@+id/toggleSortBySize"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="BY SIZE"
+            android:textOn="BY SIZE"
+            android:textColor="#fff" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="BY LENGHT"
+            android:id="@+id/toggleSortByLenght"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="BY LENGHT"
+            android:textOn="BY LENGHT"
+            android:textColor="#fff"
+            android:clickable="false" />
+    </LinearLayout>
+
+</RelativeLayout>

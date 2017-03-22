@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Main Settings Screen"
+            android:id="@+id/tvTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainScroll"
+            android:layout_below="@+id/tvTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/SyncFateAndTime"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Sync Date and Time"
+                        android:id="@+id/textView"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/toggleSyncFateAndTime"
+
+                        android:checked="false"
+                        android:background="@drawable/toggle_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/DateFormat"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Date Format"
+                        android:id="@+id/textView4"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerDateFormat"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/BeepNoises"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Beep Noise"
+                        android:id="@+id/textView5"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff" />
+
+                    <ToggleButton style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleBeepNoises"
+
+                        android:textColor="#FFF"
+                        android:background="@drawable/toggle_selector"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/RecordingLEDindicator"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Recording LED Indicator"
+                        android:id="@+id/textView6"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleRecordingLEDindicator"
+
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:textColor="#FFF"
+                        android:background="@drawable/toggle_selector"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/DefaultModeCameraStarts"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Default Mode Camera Starts"
+                        android:id="@+id/textView16"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerDefaultModeCameraStarts"
+
+                        android:transitionGroup="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView16"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/PowerOnAutoRecord"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Power On-Auto Record"
+                        android:id="@+id/textView8"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerPowerOnAutoRecord"
+
+                        android:transitionGroup="true"
+                        android:layout_alignTop="@+id/textView8"
+                        android:layout_toRightOf="@+id/textView8"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/StandbyTime"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Standby Time"
+                        android:id="@+id/textView9"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerStandbyTime"
+
+                        android:textOff="Off"
+                        android:textOn="On"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView9"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/PowerOffDisconnect"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Power Off Disconnect"
+                        android:id="@+id/textView10"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerPowerOffDisconnect"
+
+                        android:textOff="Off"
+                        android:textOn="On"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView10"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/MotionDetection"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Motion Detection"
+                        android:id="@+id/textView11"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff" />
+
+                    <ToggleButton style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleMotionDetection"
+
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:textColor="#FFF"
+                        android:background="@drawable/toggle_selector"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/MotionDetectionSensitivity"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Motion Detection Sensitivity"
+                        android:id="@+id/textView12"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spinnerMotionDetectionSensitivity"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/textView12"
+                        android:layout_toRightOf="@+id/textView12"
+
+                        android:layout_marginRight="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/MotionTurnOff"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Motion Turn Off"
+                        android:id="@+id/textView13"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spinnerMotionTurnOff"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/textView13"
+                        android:layout_toRightOf="@+id/textView13"
+
+
+                        android:layout_marginRight="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/TVOut"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="TV Out"
+                        android:id="@+id/textView14"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spinnerTVOut"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView14"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/GSensor"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="G-Sensor"
+                        android:id="@+id/textView23"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleGSensor"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:textColor="#FFF"
+                        android:background="@drawable/toggle_selector"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/CarPlateStamp"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Car Plate Stamp"
+                        android:id="@+id/textView28"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleCarPlateStamp"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:textColor="#FFF"
+                        android:background="@drawable/toggle_selector"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/carNumber"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Car Number"
+                        android:id="@+id/textView56"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/etCarNumber"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView56"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="23sp"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF"
+                        android:layout_toLeftOf="@+id/sendCarNumberBtn"
+                        android:layout_toStartOf="@+id/sendCarNumberBtn"
+                        android:layout_marginRight="5dp"
+                        android:inputType="text"
+                        android:text="AH 3040 AM" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ok"
+                        android:id="@+id/sendCarNumberBtn"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/selector_btn"
+                        android:textColor="@drawable/selector_text_btn"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginRight="7dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/SpeedStamp"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Speed Stamp"
+                        android:id="@+id/textView49"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleSpeenStamp"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:textColor="#FFF"
+                        android:background="@drawable/toggle_selector"
+                        android:checked="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/SpeedUnits"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Speed Unit"
+                        android:id="@+id/textView50"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spinnerSpeedUnit"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView50"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/relativeLayout"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Show connection Logs"
+                        android:id="@+id/textView55"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleConnectionLog"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:textColor="#FFF"
+                        android:background="@drawable/toggle_selector"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/TimedMode"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Timed Mode"
+                        android:id="@+id/textView26"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <ToggleButton
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/toggleTimeMode"
+                        android:background="@drawable/toggle_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/FromTime"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="From Time"
+                        android:id="@+id/textView27"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="00:00"
+                        android:id="@+id/tvFromTime"
+                        android:layout_alignTop="@+id/textView27"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/ToTime"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="To Time"
+                        android:id="@+id/textView51"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="00:00"
+                        android:id="@+id/tvToTime"
+                        android:layout_alignTop="@+id/textView51"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/ArtificialLightFrequency"
+                    android:layout_margin="5dp"
+                    android:background="#16FFFFFF"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Artificial Light Frequency"
+                        android:id="@+id/textView32"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerArtificialLightFrequency"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/textView32"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

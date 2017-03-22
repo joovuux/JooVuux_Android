@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="260dp"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <!-- This layout is used by setting the 'dialogLayout' attribute in DialogPreference -->
+
+
+    <!-- This is filled by the 'message' attribute on DialogPreference: -->
+
+    <NumberPicker
+        android:id="@+id/numPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/btnOk"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp" />
+
+</RelativeLayout>

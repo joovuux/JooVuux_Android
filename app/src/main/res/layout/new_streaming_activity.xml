@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_design_btn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/frameWhiteBalanceBtn">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/imageView16"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_wb_streaming"
+                    android:duplicateParentState="true" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_design_btn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/btnMakePhoto">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageView17"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_photo_streaming"
+                    android:duplicateParentState="true" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_design_btn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/frameStartRec">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageView18"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_video_streaming"
+                    android:duplicateParentState="true" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_design_btn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/frameSettingsBtn">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView19"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_settings_streaming"
+                    android:duplicateParentState="true" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_design_btn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/btnInfo"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView20"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_info_streaming"
+                    android:duplicateParentState="true" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="#48d8b7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/btnInfoPortrait"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/ivInfoPortrait"
+                    android:layout_gravity="center"
+                    android:background="@drawable/stream_info_press"
+                    android:duplicateParentState="true" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout8">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="#ff48d8b7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="STREAM"
+                        android:id="@+id/textView64"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:textIsSelectable="false"
+                        android:textSize="17dp" />
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/btnBack">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="15dp"
+                            android:id="@+id/imageView13"
+                            android:src="@drawable/back_arrow_design"
+                            android:layout_above="@+id/textView64"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="42dp"
+                            android:layout_marginEnd="42dp"
+                            android:layout_gravity="right|center_vertical" />
+                    </FrameLayout>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerModeSelect"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@+id/textView64"
+                        android:layout_marginLeft="15dp" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="#333333"
+                android:layout_margin="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:id="@+id/frame"
+                    android:layout_alignParentTop="true"
+                    android:background="#333333"
+                    android:layout_alignParentBottom="true">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:id="@+id/infoFrame"
+                        android:visibility="visible"
+                        android:layout_alignLeft="@+id/frame"
+                        android:layout_alignStart="@+id/frame"
+                        android:layout_gravity="center_horizontal|bottom">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/scrollView5"
+                            android:layout_gravity="center" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:id="@+id/llInfo"
+                                android:visibility="visible">
+
+                                <FrameLayout
+                                    android:layout_width="180dp"
+                                    android:layout_height="32dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/rectangle_information"
+                                    android:id="@+id/frameLayout2"
+                                    android:layout_gravity="center_horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView71"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical|center_horizontal"
+                                        android:text="INFORMATION"
+                                        android:textColor="#fff" />
+                                </FrameLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rl_modesetting"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="15dp" >
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="MODE SETTING"
+                                        android:id="@+id/tv_modesetting"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp"
+                                        android:gravity="center_horizontal" />
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/VideoResolution"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Video Resolution:"
+                                        android:id="@+id/textView30"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvVideoResolution"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:longClickable="true"
+                                    android:id="@+id/Audio"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Audio:"
+                                        android:id="@+id/TextView98"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvAudio"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:longClickable="true"
+                                    android:id="@+id/rtVideoTimeStamp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Video Time Stamp:"
+                                        android:id="@+id/labelVideoTimeStamp"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvVideoTimeStamp"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/Rotate180Degrees"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Image Rotation:"
+                                        android:id="@+id/tvEx12"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvRotate180Degrees"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:longClickable="true"
+                                    android:id="@+id/lvLoopRecording"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Loop Recording:"
+                                        android:id="@+id/labelLoopRecording"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvLoopRecording"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/VideoClipLength"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Video Clip Length:"
+                                        android:id="@+id/textView42"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvVideoClipLength"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/VideoBirRates"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Video Bit Rates:"
+                                        android:id="@+id/textView40"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvVideoBirRates"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/WDR"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="WDR:"
+                                        android:id="@+id/textView44"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvWDR"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/FieldOfView"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Field of View:"
+                                        android:id="@+id/textView48"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvFieldOfView"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rlTimeLapseVideo"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Time Lapse Video:"
+                                        android:id="@+id/labelTimeLapseVideo"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvTimeLapseVideo"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/main_____________________main"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="15dp" >
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="MAIN SETTINGS"
+                                        android:id="@+id/textView80"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp"
+                                        android:gravity="center_horizontal" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/CameraTime"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Camera Time:"
+                                        android:id="@+id/textView83"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvCameraTime"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/Dateformat"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Date Format:"
+                                        android:id="@+id/textView85"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvDateformat"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/BeepNoise"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Beep Noise:"
+                                        android:id="@+id/textView87"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvBeepNoise"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/RecordingLedIndicator"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Recording LED Indicator:"
+                                        android:id="@+id/textView89"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvRecordingLedIndicator"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/DefaultCameraMode"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Default Mode Camera Starts:"
+                                        android:id="@+id/textView91"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvDefaultCameraMode"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/StandByTime"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Standby Time:"
+                                        android:id="@+id/textView93"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvStandByTime"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/MotionDetection"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Motion Detection:"
+                                        android:id="@+id/textView95"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvMotionDetection"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/MotionTurnOff"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Motion Turn Off:"
+                                        android:id="@+id/textView97"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvMotionTurnOff"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/TvOut"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="TV out:"
+                                        android:id="@+id/textView99"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvTvOut"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/Gsensor"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="G-Sensor:"
+                                        android:id="@+id/textView101"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvGsensor"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/CarPlateStamp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Car Plate Number Stamp:"
+                                        android:id="@+id/textView103"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvCarPlateStamp"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/CarNummber"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Car Plate Number:"
+                                        android:id="@+id/textView105"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvCarNummber"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/WiFiPassword"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="WiFi Password:"
+                                        android:id="@+id/textView107"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvWiFiPassword"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/SpeedStamp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Speed Stamp:"
+                                        android:id="@+id/textView109"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvSpeedStamp"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/SpeedUnit"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Speed Unit:"
+                                        android:id="@+id/textView111"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvSpeedUnit"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/TimedMode"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Timed Mode:"
+                                        android:id="@+id/textView115"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvTimedMode"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/FromTime"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="From Time:"
+                                        android:id="@+id/textView117"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvFromTime"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/ToTime"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="To Time:"
+                                        android:id="@+id/textView119"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvToTime"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rlPowerOnDelay"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Power On Delay:"
+                                        android:id="@+id/labelPowerOnDelay"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvPowerOnDelay"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rlLowBatteryWarning"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Low Battery Warning:"
+                                        android:id="@+id/labelLowBatteryWarning"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvLowBatteryWarning"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rlWifiAutoStart"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="2dp" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Wifi Auto Start:"
+                                        android:id="@+id/labelWifiAutoStart"
+                                        android:textColor="#999999"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvWifiAutoStart"
+                                        android:textColor="#ffdddddd"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </ScrollView>
+                    </FrameLayout>
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressBar2"
+                        android:layout_gravity="center_horizontal|top"
+                        android:layout_marginTop="25dp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

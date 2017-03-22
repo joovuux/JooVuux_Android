@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="ua.lsoft.net.joovuux.MainActivity"
+    android:background="#e2e2e2">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f8f8f8"
+            android:id="@+id/frameModeSettings"
+            android:layout_marginTop="63dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Please turn the JooVuu X on and press the mode button down until the WiFi blue LED turns on.  "
+                android:id="@+id/tvFWVersion"
+                android:textColor="#ff777777"
+                android:layout_marginTop="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Connect"
+                android:id="@+id/btnOk"
+                android:textColor="#fff"
+                android:stateListAnimator="@null"
+                android:background="@drawable/selector_design_settings_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Next, open your WiFi connection screen, connect to the JooVuu X and enter the password.  Once connected press ‘Connect’ below. "
+                android:id="@+id/textView54"
+                android:textColor="#ff777777"
+                android:textSize="20dp"
+                android:layout_below="@+id/tvFWVersion"
+                android:layout_alignLeft="@+id/tvFWVersion"
+                android:layout_alignStart="@+id/tvFWVersion"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView26"
+            android:src="@drawable/new_logo"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

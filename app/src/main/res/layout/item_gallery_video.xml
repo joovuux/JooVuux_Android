@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">>
+
+    <com.joovuux.gallery.SquareImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/itemGalleryImage"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dc47d6b4"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/itemGalleryImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView23"
+            android:layout_gravity="center"
+            android:src="@drawable/play"
+            android:layout_margin="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="12211.MOV"
+            android:id="@+id/tvName"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+    </FrameLayout>
+
+</RelativeLayout>

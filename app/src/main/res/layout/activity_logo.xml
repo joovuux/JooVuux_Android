@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="ua.lsoft.net.joovuux.MainActivity"
+    android:background="#e2e2e2">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/imageView25"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameModeSettings"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#f8f8f8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Camera FW: "
+                android:id="@+id/asas"
+                android:textColor="#ff777777"
+                android:layout_marginTop="18dp"
+                android:layout_alignParentTop="true"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Format MicroSD Card"
+                android:id="@+id/btnFormatSdCard"
+                android:textColor="#fff"
+                android:stateListAnimator="@null"
+                android:background="@drawable/selector_design_settings_btn"
+                android:layout_below="@+id/btnSendReport"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="App version: 1.0.7"
+                android:id="@+id/textView53"
+                android:textColor="#ff777777"
+                android:textSize="20sp"
+                android:layout_below="@+id/asas"
+                android:layout_alignLeft="@+id/asas"
+                android:layout_alignStart="@+id/asas"
+                android:layout_marginTop="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="VERSION"
+                android:id="@+id/tvFWVersion"
+                android:textColor="#ff48d8b7"
+                android:textSize="25dp"
+                android:layout_alignTop="@+id/asas"
+                android:layout_toRightOf="@+id/asas"
+                android:layout_toEndOf="@+id/asas"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-5dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="White Balance"
+                android:id="@+id/btnWhiteBalance"
+                android:textColor="#fff"
+                android:stateListAnimator="@null"
+                android:background="@drawable/selector_design_settings_btn"
+                android:layout_below="@+id/btnResetSettings"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Send Report"
+                android:id="@+id/btnSendReport"
+                android:textColor="#fff"
+                android:stateListAnimator="@null"
+                android:background="@drawable/selector_design_settings_btn"
+                android:layout_below="@+id/btnWhiteBalance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Reset Settings"
+                android:id="@+id/btnResetSettings"
+                android:textColor="#fff"
+                android:stateListAnimator="@null"
+                android:background="@drawable/selector_design_settings_btn"
+                android:layout_below="@+id/textView53"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:baselineAligned="false"
+        android:id="@+id/linearLayout10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ff48d8b7" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="CAMERA"
+                android:id="@+id/textView66"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:textIsSelectable="false"
+                android:textSize="17dp" />
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/btnBack" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/imageView24"
+                    android:src="@drawable/back_arrow_design"
+                    android:layout_above="@+id/textView66"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="42dp"
+                    android:layout_marginEnd="42dp"
+                    android:layout_gravity="right|center_vertical" />
+            </FrameLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView25"
+        android:src="@drawable/new_logo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/linearLayout10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>

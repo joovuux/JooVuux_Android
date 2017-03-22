@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="my_spinner_text_color">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#ff1195ff</color>
+    <color name="toggle_grey">#a5a5a5</color>
+    <color name="toggle_blue">#48d8b7</color>
+
+</resources>

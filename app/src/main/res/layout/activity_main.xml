@@ -1,0 +1,225 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ua.lsoft.net.joovuux.MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:background="#16FFFFFF"
+            android:id="@+id/facebookBtn">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:src="@drawable/facebook_ico" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:background="#16FFFFFF"
+            android:id="@+id/twitterBtn">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:src="@drawable/twitter_ico" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#16FFFFFF"
+            android:id="@+id/youtubeBtn">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:src="@drawable/youtube_ico" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="2dp"
+                android:background="#16FFFFFF"
+                android:id="@+id/frameModeSettings">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/mode_ico" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="2dp"
+                android:background="#16FFFFFF"
+                android:onClick="onClick"
+                android:id="@+id/frameMainSettings">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/settings_ico" />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="2dp"
+                android:background="#16FFFFFF"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/frameStreamingBtn">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:src="@drawable/live_strimming_ico" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="2dp"
+                android:background="#16FFFFFF"
+                android:onClick="onClick"
+                android:id="@+id/btnGallery">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:src="@drawable/gallery_ico" />
+            </FrameLayout>
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/asd"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="6dp"
+        android:background="#16FFFFFF" >
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:src="@drawable/photo_ico" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:background="#16FFFFFF" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:src="@drawable/record_ico" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:background="#16FFFFFF"
+        android:id="@+id/frameConnectToCamera">
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/wifi_ico" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tableLayout1"
+        android:layout_alignLeft="@+id/asd"
+        android:layout_alignRight="@+id/frameStartRec"
+        android:layout_below="@+id/linearLayout1" >
+
+        <FrameLayout
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rectangle_logo"
+            android:id="@+id/frameLogo">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:src="@drawable/logo" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

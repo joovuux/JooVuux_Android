@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:baselineAligned="false"
+        android:id="@+id/linearLayout9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ff48d8b7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="GALLERY"
+                android:id="@+id/textView64"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:textIsSelectable="false"
+                android:textSize="17dp" />
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/btnBack">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/back_arrow_design"
+                    android:layout_above="@+id/textView64"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="42dp"
+                    android:layout_marginEnd="42dp"
+                    android:layout_gravity="right|center_vertical" />
+            </FrameLayout>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/downloadProgress"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="4dp"
+            android:background="#f8f8f8"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="All"
+                android:id="@+id/tvTypeTitle"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ff48d8b7"
+                android:textSize="17dp"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/btnLeftTypePick">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView14"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/arrow_left_mode_pick"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="visible"
+                    android:layout_gravity="left|center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnRightTypePick">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView15"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/arrow_right_mode_pick"
+                    android:layout_marginRight="20dp"
+                    android:visibility="visible"
+                    android:layout_gravity="right|center_vertical" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="4dp"
+            android:background="#f8f8f8"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" >
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/btnLeftSortPick" >
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView21"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/arrow_left_mode_pick"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="visible"
+                    android:layout_gravity="left|center_vertical" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="By Date"
+                android:id="@+id/tvSortTitle"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ff48d8b7"
+                android:textSize="17dp"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnRightSortPick" >
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView22"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/arrow_right_mode_pick"
+                    android:layout_marginRight="20dp"
+                    android:visibility="visible"
+                    android:layout_gravity="right|center_vertical" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/linearLayout4"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="VIDEOS"
+            android:id="@+id/toggleVideoFlter"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="VIDEOS"
+            android:textOn="VIDEOS"
+            android:textColor="#fff" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PICTURES"
+            android:id="@+id/togglePhotoFilter"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="PICTURES"
+            android:textOn="PICTURES"
+            android:textColor="#fff" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ALL"
+            android:id="@+id/toggleAllFilter"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="ALL"
+            android:textOn="ALL"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gvGallery"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:fastScrollAlwaysVisible="false"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/linearLayout5"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/linearLayout9" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/linearLayout5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone">
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="BY DATE"
+            android:id="@+id/toggleSortByDate"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="BY DATE"
+            android:textOn="BY DATE"
+            android:textColor="#fff" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="BY SIZE"
+            android:id="@+id/toggleSortBySize"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="BY SIZE"
+            android:textOn="BY SIZE"
+            android:textColor="#fff" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="BY LENGHT"
+            android:id="@+id/toggleSortByLenght"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_selector_mode"
+            android:textOff="BY LENGHT"
+            android:textOn="BY LENGHT"
+            android:textColor="#fff"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignTop="@+id/gvGallery"
+        android:layout_centerHorizontal="true"
+        android:background="#b7bcbcbc"></FrameLayout>
+
+</RelativeLayout>

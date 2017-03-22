@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ua.net.lsoft.joovuux"
+    android:versionCode="1"
+    android:versionName="1.07">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <!--<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />-->
+
+    <!--<permission android:name="com.joovuux.gcm.permission.C2D_MESSAGE"-->
+        <!--android:protectionLevel="signature" />-->
+    <!--<uses-permission android:name="com.joovuux.gcm.permission.C2D_MESSAGE" />-->
+
+
+
+
+    <application
+        android:name="com.joovuux.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:configChanges="keyboardHidden|orientation|screenSize">
+
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.joovuux.gcm" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.joovuux.gcm" />
+            </intent-filter>
+        </receiver>
+        <!-- [START gcm_listener] -->
+        <service
+            android:name="com.joovuux.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name="com.joovuux.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name="com.joovuux.RegistrationIntentService"
+            android:exported="false">
+        </service>
+
+
+
+
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider1689703157924669"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+        <activity
+            android:name="com.joovuux.ActivityMain"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.joovuux.ActivityMode"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.joovuux.ActivityStreaming"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="com.joovuux.gallery.ActivityGallery"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.joovuux.gallery.ActivityGalleryDescription"
+            android:label="@string/app_name"
+>
+        </activity>
+
+        <activity
+            android:name="com.joovuux.settings.ActivityMainSettings"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.joovuux.settings.ActivityModeSettings"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.joovuux.youtube.ActivityYoutubeUpload"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.joovuux.ActivityWhiteBalance"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.joovuux.ActivityLogo"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.joovuux.connection.ActivityConnection"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f2bfa3112946a064beb56dba275e63d187265782" />
+    </application>
+
+</manifest>
